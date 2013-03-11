@@ -15,10 +15,12 @@
         <!-- Script added for expand panel -- from here : http://redhotsly.github.com/simple-expand/ -->
         <script src="js/simple-expand.min.js"></script>
         <script type="text/javascript">
-			$('.expander').simpleexpand();
+        $(function () {
+            $('.expander').simpleexpand();
+        });
 		</script>
         <style>
-			.content {display:none;}
+			.content, .content1, .content2, .content3 {display:none;}
 		</style>
         <!-- Script ending for expand panel -->
         
@@ -105,22 +107,26 @@
 									<ul class="style2">
 										<li class="first">
 											<a href="#" class="image image-left"><img src="images/pic09.jpg" alt=""></a>
-											<h3><a href="#" class="expander">Panel 1</a></h3>
+											<h3><a href="#" class="expander" data-expander-target="div.content" 
+    data-expander-target-search="absolute" >Panel 1</a></h3>
 											<p><a href="#">Short Description of Panel 1. Like which topic it covers etc</a></p>
 										</li>
 										<li>
 											<a href="#" class="image image-left"><img src="images/pic10.jpg" alt=""></a>
-											<h3><a href="#">Panel 2</a></h3>
+											<h3><a href="#" class="expander" data-expander-target="div.content1" 
+    data-expander-target-search="absolute">Panel 2</a></h3>
 											<p><a href="#">Short Description of Panel 2. Like which topic it covers etc</a></p>
 										</li>
 										<li>
 											<a href="#" class="image image-left"><img src="images/pic09.jpg" alt=""></a>
-											<h3><a href="#">Panel 3</a></h3>
+											<h3><a href="#" class="expander" data-expander-target="div.content2" 
+    data-expander-target-search="absolute">Panel 3</a></h3>
 											<p><a href="#">Short Description of Panel 3. Like which topic it covers etc</a></p>
 										</li>
 										<li>
 											<a href="#" class="image image-left"><img src="images/pic10.jpg" alt=""></a>
-											<h3><a href="#">Panel 4</a></h3>
+											<h3><a href="#" class="expander" data-expander-target="div.content3" 
+    data-expander-target-search="absolute">Panel 4</a></h3>
 											<p><a href="#">Short Description of Panel 4. Like which topic it covers etc</a></p>
 										</li>                                                                                
 									</ul>
@@ -142,7 +148,20 @@
 
 							<div class="8u mobileUI-main-content">
                             	<div class="content">
-    								content to hide.
+    								content to hide. Panel 1
+                                    <p>Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis congue faucibus erat, accumsan aliquet velit aliquet nec. Nullam mattis tellus in urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum mauris. Nam suscipit nisl non leo lobortis molestie. Quisque urna velit, vestibugravida varius ullamcorper in, fermentum ut purus. In hac habitasse platea dictumst. Integer quis justo in dui sollicitudin elementum. Sed ac elit erat. Vivamus pellentesque.</p>
+								</div>
+                                <div class="content1">
+    								content to hide. Panel 2
+                                    <p>Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis congue faucibus erat, accumsan aliquet velit aliquet nec. Nullam mattis tellus in urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum mauris. Nam suscipit nisl non leo lobortis molestie. Quisque urna velit, vestibugravida varius ullamcorper in, fermentum ut purus. In hac habitasse platea dictumst. Integer quis justo in dui sollicitudin elementum. Sed ac elit erat. Vivamus pellentesque.</p>
+								</div>
+                                <div class="content2">
+    								content to hide. Panel 3
+                                    <p>Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis congue faucibus erat, accumsan aliquet velit aliquet nec. Nullam mattis tellus in urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum mauris. Nam suscipit nisl non leo lobortis molestie. Quisque urna velit, vestibugravida varius ullamcorper in, fermentum ut purus. In hac habitasse platea dictumst. Integer quis justo in dui sollicitudin elementum. Sed ac elit erat. Vivamus pellentesque.</p>
+								</div>
+                                <div class="content3">
+    								content to hide. Panel 4
+                                    <p>Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis congue faucibus erat, accumsan aliquet velit aliquet nec. Nullam mattis tellus in urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum mauris. Nam suscipit nisl non leo lobortis molestie. Quisque urna velit, vestibugravida varius ullamcorper in, fermentum ut purus. In hac habitasse platea dictumst. Integer quis justo in dui sollicitudin elementum. Sed ac elit erat. Vivamus pellentesque.</p>
 								</div>
 								<article id="content">
 									<h2>Left Sidebar</h2>
