@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>MariaS Robotics</title>
+		<title></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -11,6 +11,19 @@
 		<script src="js/jquery.dropotron-1.2.js"></script>
 		<script type="text/javascript" src="js/jquery.slidertron-1.2.js"></script>
 		<script src="js/init.js"></script>
+        
+        <!-- Script added for expand panel -- from here : http://redhotsly.github.com/simple-expand/ -->
+<!--        <script src="js/simple-expand.min.js"></script>
+        <script type="text/javascript">
+        $(function () {
+            $('.expander').simpleexpand();
+        });
+		</script>
+        <style>
+			.content, .content1, .content2, .content3 {display:none;}
+		</style>-->
+        <!-- Script ending for expand panel -->
+        
 		<noscript>
 			<link rel="stylesheet" href="css/5grid/core.css" />
 			<link rel="stylesheet" href="css/5grid/core-desktop.css" />
@@ -22,7 +35,7 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 	</head>
-	<body class="homepage">
+	<body class="left-sidebar">
 
 		<!-- Header Wrapper -->
 			<div id="header-wrapper">
@@ -34,13 +47,13 @@
 								<!-- Nav -->
 									<nav id="nav" class="mobileUI-site-nav">
 										<ul>
-											<li class="current_page_item"><a href="index.html">Home</a></li>
+											<li><a href="index.html">Home</a></li>
                                             <li><a href="vision.html">Our Vision</a></li>
-											<li><a href="products.html">Products</a></li>
+											<li class="current_page_item"><a href="products.html">Products</a></li>
 											<li><a href="our-clients.html">Our Clients</a></li>
 										</ul>
 									</nav>
-							</div>
+                             </div>
 						</div>
 						
 						<div class="row">
@@ -52,150 +65,14 @@
 										<!-- Logo -->
 											<h1><a href="#" class="mobileUI-site-name">Marias Robotics<span>  Your Platform for Practical Learning</span></a></h1>
 									</header>
+	
 							</div>
 						</div>
 					</div>
-
+					
 			</div>
 		<!-- Header Wrapper Ends Here -->
 		
-		<!-- Banner Wrapper -->
-			<div id="banner-wrapper">
-
-				<!-- Banner -->
-					<div id="banner" class="5grid-layout">
-					
-						<div class="row">
-							<div class="12u">
-	
-								<!-- Slider -->
-
-									<div id="slider">
-										<div class="viewer">
-											<div class="reel">
-												<div class="slide">
-													<div class="info">
-														<h2>Our Logo</h2>
-														<span>Along with our robot here</span>
-														<a class="link" href="#">Full story ...</a>
-													</div>
-													<img src="images/slide01.jpg" alt="" />
-												</div>
-												<div class="slide">
-													<div class="info">
-														<h2>About our Robot<br />Its Uniqueness</h2>
-														<span>This photo should generate interest on our robot</span>
-														<a class="link" href="#">Full story ...</a>
-													</div>	
-													<img src="images/slide02.jpg" alt="" />
-												</div>
-												<div class="slide">
-													<div class="info">
-														<h2>Some Picture</h2>
-														<span>Ideas Welcome :)</span>
-														<a class="link" href="#">Full story ...</a>
-													</div>	
-													<img src="images/slide03.jpg" alt="" />
-												</div>
-											</div>
-										</div>
-										<div class="indicator">
-											<ul>
-												<li class="active">1</li>
-												<li>2</li>
-												<li>3</li>
-											</ul>
-										</div>
-									</div>
-							</div>
-						</div>
-						
-						<div class="row">
-							<div class="4u">
-								<section>
-									<a href="#" class="image image-full"><img src="images/pic02.jpg" alt=""></a>
-									<a href="#" class="button button-huge button-icon button-icon-big-arrow">Photo Gallery<br />
-									<span>Sneak peek</span></a>
-								</section>
-							</div>
-							<div class="4u"> 
-								<section>
-									<a href="#" class="image image-full"><img src="images/pic03.jpg" alt=""></a>
-									<a href="#" class="button button-huge button-alt button-icon button-icon-big-arrow">Partner with Us<br />
-									<span>Waiting for you!</span></a>
-								</section>
-							</div>
-							<div class="4u"> 
-								<section>
-									<a href="#" class="image image-full"><img src="images/pic04.jpg" alt=""></a>
-									<a href="#" class="button button-huge button-alt2 button-icon button-icon-big-arrow"> Contact Us<br />
-									<span>Lets build our Relation</span></a>
-								</section>
-							</div>
-						</div>
-					
-					</div>
-				<!-- Banner Ends Here -->
-
-			</div>
-		<!-- Banner Wrapper Ends Here -->
-
-		<!-- Featured Wrapper -->
-			<div id="featured-wrapper">
-
-				<!-- Featured Content -->
-					<div id="featured" class="5grid-layout">
-						<div class="row">
-
-							<div class="3u">
-								<section>
-									<h2>Sed nullam dolor lorem feugiat.</h2>
-									<p class="subtitle">Lorem ipsum sed dolor et amet adipiscing nullam.</p>
-									<ul class="style1">
-										<li class="first"><a href="#">Phasellus dapibus nullam</a></li>
-										<li><a href="#">Elementum eget vestibulum</a></li>
-										<li><a href="#">Quis lacus praesent et aliquet</a></li>
-										<li><a href="#">Sagittis nisi vel dolore dignissim</a></li>
-										<li><a href="#">Pellentesque nulla adipiscing</a></li>
-										<li><a href="#">Feugiat consequat lorem</a></li>
-									</ul>
-								</section>
-							</div>
-	
-							<div id="box1" class="3u">
-								<section>
-									<a href="#" class="image image-full"><img src="images/pic05.jpg" alt=""></a>
-									<h3>Ipsum et consequat</h3>
-									<p>Phasellus dapibus nullam sit  elementum sem eget vestibulum et quis lacus. Praesent aliquet sagittis nisi vel dignissim.</p>
-									<a href="#" class="button button-padding button-icon button-icon-arrow">Learn More</a>
-								</section>
-							</div>
-	
-							<div class="3u">
-								<section>
-									<a href="#" class="image image-full"><img src="images/pic06.jpg" alt=""></a>
-									<h3>Elementum adipiscing</h3>
-									<p>Phasellus dapibus nullam sit  elementum sem eget vestibulum et quis lacus. Praesent aliquet sagittis nisi vel dignissim.</p>
-									<a href="#" class="button button-padding button-icon button-icon-arrow button-alt">Learn More</a>
-								</section>
-							</div>
-	
-							<div class="3u">
-								<section>
-									<a href="#" class="image image-full"><img src="images/pic07.jpg" alt=""></a>
-									<h3>Mauris lorem ipsum</h3>
-									<p>Phasellus dapibus nullam sit  elementum sem eget vestibulum et quis lacus. Praesent aliquet sagittis nisi vel dignissim.</p>
-									<a href="#" class="button button-padding button-icon button-icon-arrow button-alt2">Learn More</a>
-								</section>
-							</div>
-	
-						</div>
-					</div>
-				<!-- Featured Content Ends Here -->
-
-			</div>
-		<!-- Featured Wrapper Ends Here -->
-				
 		<!-- Main Wrapper -->
 			<div id="main-wrapper">
 
@@ -203,15 +80,54 @@
 					<div id="main" class="5grid-layout">
 
 						<div class="row">
-							<div class="12u">
+
+							<div id="sidebar" class="4u">
+								
+								<section>
+									<h2>Panels</h2>	
+									<ul class="style2">
+                                    	<li class="first">
+											<a href="#" class="image image-left"><img src="images/pic10.jpg" alt=""></a>
+											<h3><a href="products.html" >Robot</a></h3>
+											<p><a href="#">Short Description of Robot. What it is and purpose</a></p>
+										</li>
+										<li >
+											<a href="#" class="image image-left"><img src="images/pic09.jpg" alt=""></a>
+											<h3><a href="panel1.html" >Panel 1</a></h3>
+											<p><a href="#">Short Description of Panel 1. Like which topic it covers etc</a></p>
+										</li>
+										<li>
+											<a href="" class="image image-left"><img src="images/pic10.jpg" alt=""></a>
+											<h3><a href="panel2.html">Panel 2</a></h3>
+											<p><a href="#">Short Description of Panel 2. Like which topic it covers etc</a></p>
+										</li>
+										<li>
+											<a href="" class="image image-left"><img src="images/pic09.jpg" alt=""></a>
+											<h3><a href="panel3.html">Panel 3</a></h3>
+											<p><a href="#">Short Description of Panel 3. Like which topic it covers etc</a></p>
+										</li>
+										<li>
+											<a href="" class="image image-left"><img src="images/pic10.jpg" alt=""></a>
+											<h3><a href="panel4.html">Panel 4</a></h3>
+											<p><a href="#">Short Description of Panel 4. Like which topic it covers etc</a></p>
+										</li>                                                                                
+									</ul>
+								</section>
+							
+							</div>
+
+							<div class="8u mobileUI-main-content">
 								<article id="content">
-									<h2>About Us</h2>
-									<p class="subtitle">What are we!</p>
+									<h2>Panel 3</h2>
+									<p class="subtitle">Clear description of the Panel 3. How, Why & What</p>
 									<a href="#" class="image image-left"><img src="images/pic08.jpg" alt=""></a>
-									<p>We are a group of highly committed individuals from witch background in our respective fields, with a goal to transform the way education in administered in our country. We are committed to make it meaningful and we believe all education meaningful to the society and we must strive to make a better place to live in.</p>
-									<a href="#" class="button button-padding button-icon button-icon-arrow">Learn More</a>
+									<p>Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis congue faucibus erat, accumsan aliquet velit aliquet nec. Nullam mattis tellus in urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum mauris. Nam suscipit nisl non leo lobortis molestie. Quisque urna velit, vestibugravida varius ullamcorper in, fermentum ut purus. In hac habitasse platea dictumst. Integer quis justo in dui sollicitudin elementum. Sed ac elit erat. Vivamus pellentesque.</p>
+									<p>Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed blandit. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Praesent pellentesque facilisis elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In hac habitasse platea dictumst. Nullam id ante eget dui vulputate aliquam. Pellentesque erat erat, tincidunt in, eleifend accumsan, malesuada eget, augue. Suspendisse sit amet tellus in eros bibendum condimentum. Vestibulum suscipit volutpat nulla. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat. Vestibulum dui sem, pulvinar sed, imperdiet nec, iaculis.</p>
+									<p>Praesent a lacus at urna congue rutrum. Nulla enim eros, porttitor eu, tempus id, varius non, nibh. Duis enim nulla, luctus eu, dapibus lacinia, venenatis id, quam. Vestibulum imperdiet, magna nec eleifend rutrum, nunc lectus vestibulum velit, euismod lacinia quam nisl id lorem. Quisque erat. Vestibulum pellentesque, justo mollis pretium suscipit, justo nulla blandit libero, in blandit augue justo quis nisl. Fusce mattis viverra elit. Fusce quis tortor. Vestibulum suscipit volutpat nulla. Maecenas pede nisl, elementum eu, ornare ac, malesuada at, erat. Proin gravida orci porttitor enim accumsan lacinia. Donec condimentum, urna non molestie semper, ligula enim ornare nibh, quis laoreet eros quam eget ante. Aliquam libero. Vivamus nisl nibh, iaculis vitae, viverra sit amet, ullamcorper vitae, turpis. Aliquam erat volutpat.
+									</p>
 								</article>
 							</div>
+							
 						</div>
 
 						<div class="row bordered">
@@ -221,12 +137,12 @@
 										<li class="first">
 											<a href="#" class="image image-left"><img src="images/pic09.jpg" alt=""></a>
 											<h3><a href="#">Ipsum et consequat</a></h3>
-											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. </a></p>
+											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum.</a></p>
 										</li>
 										<li>
 											<a href="#" class="image image-left"><img src="images/pic10.jpg" alt=""></a>
 											<h3><a href="#">Ipsum et consequat</a></h3>
-											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. </a></p>
+											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum.</a></p>
 										</li>
 									</ul>
 								</section>
@@ -237,12 +153,12 @@
 										<li class="first">
 											<a href="#" class="image image-left"><img src="images/pic11.jpg" alt=""></a>
 											<h3><a href="#">Ipsum et consequat</a></h3>
-											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. </a></p>
+											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum.</a></p>
 										</li>
 										<li>
 											<a href="#" class="image image-left"><img src="images/pic12.jpg" alt=""></a>
 											<h3><a href="#">Ipsum et consequat</a></h3>
-											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. </a></p>
+											<p><a href="#">Phasellus sem tellus, consequat in euismod at, ultricies et eros. Duis amet urna imperdiet mattis. Aliquam non eros ligula, vitae bibendum.</a></p>
 										</li>
 									</ul>
 								</section>
@@ -310,7 +226,7 @@
 										<div class="row">
 											<div class="6u">
 												<ul class="style3">
-													<li class="first"><a href="mailto:contact@mariasrobotics.com" class="contact-icon contact-icon-email">contact@mariasrobotics.com</a></li>
+													<li class="first"><a href="#" class="contact-icon contact-icon-email">information@untitled.tld</a></li>
 													<li class="link nopad">
 														<a href="#" class="contact-icon contact-icon-address"><span>1234 Somewhere Road<br />
 														Nashville, TN 00000-0000</span>				
@@ -319,7 +235,7 @@
 											</div>
 											<div class="6u">
 												<ul class="style3">
-													<li class="first"><a href="https://twitter.com/MariasRobotics" class="contact-icon contact-icon-comment">@MariasRobotics</a></li>
+													<li class="first"><a href="#" class="contact-icon contact-icon-comment">@untitledcorporation</a></li>
 													<li class="link"><a href="#" class="contact-icon contact-icon-telephone">(800) 555-0000</a></li>
 												</ul>
 											</div>
@@ -333,7 +249,7 @@
 						<!-- Copyright -->
 							<div class="row">
 								<div id="copyright" class="12u">
-									&copy; Marias Robotics. All rights reserved.
+									&copy; Untitled Corporation. All rights reserved. Lorem ipsum dolor sit amet nullam feugiat consequat adipiscing lorem.
 								</div>
 							</div>
 						<!-- Copyright Ends Here -->
