@@ -11,6 +11,13 @@
 		<script src="js/jquery.dropotron-1.2.js"></script>
 		<script type="text/javascript" src="js/jquery.slidertron-1.2.js"></script>
 		<script src="js/init.js"></script>
+        
+		<!--This is  for tabbed panels-->
+        <link rel="stylesheet" href="css/jquery-ui-themeroller.css" type="text/css" media="screen">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+        <!--This is  for tabbed panels close-->
+        
 		<noscript>
 			<link rel="stylesheet" href="css/5grid/core.css" />
 			<link rel="stylesheet" href="css/5grid/core-desktop.css" />
@@ -18,7 +25,6 @@
 			<link rel="stylesheet" href="css/5grid/core-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
-            
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
@@ -88,24 +94,36 @@
 						<div class="row bordered">
                           <div id="example1" class="tabContainer">
                             <ul class="ui-tabs-nav">
-                                <li class="ui-tabs-nav-item ui-tabs-selected"><a href="#example-1-tab-1"><span>Description</span></a></li>
-                                <li class="ui-tabs-nav-item"><a href="#example-1-tab-2"><span>Demo</span></a></li>
-                                <li class="ui-tabs-nav-item"><a href="#example-1-tab-3"><span>Demo Code</span></a></li>
-                                <li class="ui-tabs-nav-item"><a href="#example-1-tab-4"><span>Options (based on demo)</span></a></li>
+                                <li class="ui-tabs-nav-item ui-tabs-selected"><a href="#tab-1"><span>Panel 1</span></a></li>
+                                <li class="ui-tabs-nav-item"><a href="#tab-2"><span>Panel 2</span></a></li>
+                                <li class="ui-tabs-nav-item"><a href="#tab-3"><span>Panel 3</span></a></li>
+                                <li class="ui-tabs-nav-item"><a href="#tab-4"><span>Panel 4</span></a></li>
+                                <li class="ui-tabs-nav-item"><a href="#tab-5"><span>Panel 5</span></a></li>
+                                <li class="ui-tabs-nav-item"><a href="#tab-6"><span>Panel 6</span></a></li>
+                                <li class="ui-tabs-nav-item"><a href="#tab-7"><span>Panel 7</span></a></li>                                
                             </ul>
-                            <div style="" class="ui-tabs-panel" id="example-1-tab-1">
+                            <div style="" class="ui-tabs-panel" id="tab-1">
                                 <p>Open yahoo.com in a popup window (800x500) positioned 50 pixels from the top and left side of the screen.
                                 </p>
                             </div>
-                            <div class="ui-tabs-panel ui-tabs-hide" id="example-1-tab-2" style="">
+                            <div class="ui-tabs-panel ui-tabs-hide" id="tab-2" style="">
                                 <p><a href="http://www.yahoo.com/" title="yahoo.com" class="example1demo">open popup</a></p>
                             </div>
-                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="example-1-tab-3">
+                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="tab-3">
                                 <p>Hi</p>
                             </div>
-                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="example-1-tab-4">
+                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="tab-4">
                                 <p>Hi 4</p>
                             </div>
+                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="tab-5">
+                                <p>Hi</p>
+                            </div>
+                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="tab-6">
+                                <p>Hi</p>
+                            </div>
+                            <div style="" class="ui-tabs-panel ui-tabs-hide" id="tab-7">
+                                <p>Hi</p>
+                            </div>                                                                                    
   						</div>
 <!--							<div class="6u">
 								<section>
@@ -236,5 +254,19 @@
 			</div>
 		<!-- Footer Wrapper Ends Here -->
 
+<!-- script for tabbed panels -->
+<script type="text/javascript">
+$('#example1 > ul').tabs({selected:0});
+$('#example1 > div:eq(2) pre code').html(replaceTags($('#example1 > div:eq(1)').html()));
+
+function replaceTags(stringTxt) {
+	var theExp = /<([^<>]*)>/g;
+	var newString = jQuery.trim(stringTxt.replace(theExp,"&lt;$1&gt;"));
+	return newString;
+}
+
+_uacct = "UA-162561-8";
+urchinTracker();
+</script>
 	</body>
 </html>
