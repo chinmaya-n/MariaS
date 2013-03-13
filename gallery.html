@@ -19,6 +19,10 @@
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-desktop.css" />
 		</noscript>
+        
+        <!-- Download PostcardViewer for gallery at www.airtightinteractive.com/projects/postcardviewer -->
+		<script type="text/javascript" src="swfobject.js"></script>
+        
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 		<!--[if lte IE 7]><link rel="stylesheet" href="css/ie7.css" /><![endif]-->
 	</head>
@@ -73,6 +77,22 @@
 									<p class="subtitle">Sneak Peek our products ! Will create a good gallery here</p>
 									<a href="#" class="image image-left"><img src="images/pic08.jpg" alt=""></a>
 									<p>Here Comes gallery</p>
+                                    
+                                    <!-- Gallery -->
+                                    <div id="#flashcontent">PostcardViewer requires JavaScript and the Flash Player. 
+                                    	<a href="http://www.macromedia.com/go/getflashplayer/">Get Flash here.</a> 
+                                    </div>
+									<script type="text/javascript">
+										var fo = new SWFObject("viewer.swf", "viewer", "100%", "100%", "8", "#181818");		
+												
+										//Optional Configuration
+										//fo.addVariable("langOpenImage", "Open Image in New Window");
+										//fo.addVariable("langAbout", "About");	
+										//fo.addVariable("xmlURL", "gallery.xml");					
+										
+										fo.write("flashcontent");	
+                                    </script>
+                                    
 								</article>
 							</div>
 						</div>
